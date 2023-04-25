@@ -29,7 +29,10 @@ function changeText1() {
     var des=document.getElementById("describe1")
     des.style.display="block";
    
-
+    var blur = document.getElementById("blur1")
+     blur.style.backdropFilter = "blur(5px)";
+     blur.style.webkitBackdropFilter = "blur(5px)";
+     
 }
 
 function price1()
@@ -39,6 +42,10 @@ function price1()
 
     var price = document.getElementById("tab1")
     price.style.display="block";
+
+    var blur = document.getElementById("blur1")
+    blur.style.backdropFilter = "none";
+    blur.style.webkitBackdropFilter = "none";
 
 }
 
@@ -51,6 +58,10 @@ function changeText2() {
 
     var des=document.getElementById("describe2")
     des.style.display="block";
+
+    var blur = document.getElementById("blur2")
+    blur.style.backdropFilter = "blur(5px)";
+    blur.style.webkitBackdropFilter = "blur(5px)";
 }
 
 function price2()
@@ -61,6 +72,11 @@ function price2()
     var price = document.getElementById("tab2")
     price.style.display="block";
 
+    var blur = document.getElementById("blur2")
+    blur.style.backdropFilter = "none";
+    blur.style.webkitBackdropFilter = "none";
+
+
 }
 
 /*------plan 3 ------------- */
@@ -70,6 +86,10 @@ function changeText3() {
 
     var des=document.getElementById("describe3")
     des.style.display="block";
+
+    var blur = document.getElementById("blur3")
+    blur.style.backdropFilter = "blur(5px)";
+    blur.style.webkitBackdropFilter = "blur(5px)";
 }
 
 function price3()
@@ -80,6 +100,9 @@ function price3()
     var price = document.getElementById("tab3")
     price.style.display="block";
 
+    var blur = document.getElementById("blur3")
+    blur.style.backdropFilter = "none";
+    blur.style.webkitBackdropFilter = "none";
 }
 
 /*------plan 4------------- */
@@ -89,6 +112,10 @@ function changeText4() {
 
     var des=document.getElementById("describe4")
     des.style.display="block";
+
+    var blur = document.getElementById("blur4")
+    blur.style.backdropFilter = "blur(5px)";
+    blur.style.webkitBackdropFilter = "blur(5px)";
 }
 
 function price4()
@@ -99,6 +126,10 @@ function price4()
     var price = document.getElementById("tab4")
     price.style.display="block";
 
+    var blur = document.getElementById("blur4")
+    blur.style.backdropFilter = "none";
+    blur.style.webkitBackdropFilter = "none";
+
 }
 
 /*------plan 5------------- */
@@ -108,6 +139,10 @@ function changeText5() {
 
     var des=document.getElementById("describe5")
     des.style.display="block";
+
+    var blur = document.getElementById("blur5")
+    blur.style.backdropFilter = "blur(5px)";
+    blur.style.webkitBackdropFilter = "blur(5px)";
 }
 
 function price5()
@@ -117,6 +152,10 @@ function price5()
 
     var price = document.getElementById("tab5")
     price.style.display="block";
+
+    var blur = document.getElementById("blur5")
+    blur.style.backdropFilter = "none";
+    blur.style.webkitBackdropFilter = "none";
 
 }
  /* open booking form */

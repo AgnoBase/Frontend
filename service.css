@@ -184,9 +184,13 @@ section{
     transition: 0.5s;
     margin:10px;
     scroll-snap-align: start;
-    box-shadow: inset 0px 2px 30px 5px rgba(0, 0, 0, 0.5);
 }
-
+/* .backdrop-blur{
+  backdrop-filter: blur(7px);
+}
+.backdrop-blur-none{
+  backdrop-filter: none;
+} */
 #list{
     display: flex;
     width:max-content;
