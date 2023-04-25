@@ -44,8 +44,8 @@ function price1()
     price.style.display="block";
 
     var blur = document.getElementById("blur1")
-    blur.style.backdropFilter = "none";
-    blur.style.webkitBackdropFilter = "none";
+    blur.style.backdropFilter = "blur(5px)";
+    blur.style.webkitBackdropFilter = "blur(5px)";
 
 }
 
