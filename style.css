@@ -51,21 +51,26 @@
             margin-bottom: 2vh;
         }
 
-        section .contentbx .formbx span p {
+        section .contentbx .formbx label p {
             font-size: 4vh;
         }
 
-        section .contentbx .formbx span h2 {
+        section .contentbx .formbx label h2 {
             margin-top: 0px;
             margin-bottom: 1vh;
         }
-
+        
+        .error{
+            color: red; 
+            font-size:small;
+            margin-bottom: 6px;
+        }        
         #boat-name {
             font-size: 7vh;
             font-weight: bolder;
         }
 
-        #label-name {
+        .label-name {
             font-weight: 800;
             color: #8A8484;
         }
@@ -114,7 +119,7 @@
             font-size: 20px;
             cursor: pointer;
             border-radius: 25px;
-            margin-top: -5px;
+            margin-top: 0;
 
         }
 
@@ -144,7 +149,10 @@
             margin-left: 200px;
             align-items: center;
         }
-
+       /* duration field */
+       select{
+        margin-right: 10.7px;
+       }
 @media screen and (max-width:720px){
      section{
         margin-top:-1.2rem;
@@ -180,4 +188,17 @@
     .btn-flex{
         margin-top:2vh;
     }
+
+    /* Name-fields */
+    #name-fields{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    /* #plan-mobile{
+        display: flex;
+        flex-direction: column;
+    } */
 }

@@ -25,52 +25,77 @@
                                 <p id="details">Enter your details</p>
                             </span>
                         </div>
-                        <span>
-                            <h2>Email Address</h2>
-                        </span>
-                        <div class="verify-email">
-                        <input class="inputbx", id="label_name", placeholder="Email" required>
-                          <button type='submit' name='verify' class="verify">verify</button> 
-                        </div>
+                       
                 </form>
                 </div>
-                <form action=''method ='POST' name="form-booking" onsubmit="validation()">
+                <form >
                     
+                    <!-- Name fields -->
+                    <label for="name">
+                        <h2> Name <span style="color: red; font-weight: 100;">*</span></h2>
+                    </label>
+                    <div class='field' id="name-fields">   
+                        <input type= 'text' class="inputbx label_name" id="name" name = "name" placeholder= "First name *" required>
+                        <input type= 'text' class="inputbx label_name" placeholder= "Middle name">
+                        <input type= 'text' class="inputbx label_name" placeholder= "Last name">
+                    </div>
+                    <div id="name-error" class="error"></div> 
+
+                    <!-- Email fields -->
+                    <label for="email">
+                        <h2>Email Address <span style="color: red; font-weight: 100;">*</span></h2>
+                    </label>
+                    <div class="verify-email">
+                    <input type= 'email' class="inputbx label_name" id='email' name='email' placeholder="Email" required>
+                    </div> 
+            
+
+                    <!-- Contact Number -->
+                    <label>
+                        <h2> Contact Number <span style="color: red; font-weight: 100;">*</span></h2>
+                    </label>
+                    <div class='field'>
+                        <input type ='tel' name="cnum" class="label-name inputbx" placeholder="Enter your 10-digit Mobile Number "  pattern="[0-9]{10}" required>
+                    </div>
+
+
+
+                    <!-- Plan Information fields -->
                     
-                    <span>
-                        <h2> Name</h2>
-                    </span>
-                    <div class='field'>   
-                        <input class="inputbx", id="label_name", placeholder= "First name">
-                        <input class="inputbx", id="label_name", placeholder= "Middle name">
-                        <input class="inputbx", id="label_name", placeholder= "Last name">
+                    <label>
+                        <h2>Plan information <span style="color: red; font-weight: 100;">*</span></h2>
+                   </label>                    
+                    <div class='field' >
+                        <label for="duration" hidden></label>
+                        <select id="duration" name="duration" class="inputbx label-name" required>
+                            <!-- <option hidden>Duration time</option> -->
+                            <option value="1">1 hour</option>
+                            <option value="1.5">1.5 hour</option>
+                        </select>
+                         
+                        <label for="date" hidden>Date:</label>
+                        <input type="date" ṇame="date" id="date" class="inputbx label-name" placeholder="Date" required>
+                        <input type="time" ṇame="time" class="inputbx label-name" placeholder="Time" required>
                     </div>
-                    <span>
-                        <h2> Contact No.</h2>
-                    </span>
-                    <div class='field'>
-                        <input name="cnum"  , id="label-name" , placeholder="Enter your Mobile Number" , class="inputbx">
-                    </div>
+                        <div id="date-error" class="error"></div>     <!--For showing error message of date field -->
+
+
+
+                    <!-- Members fields -->
                     <div>
-                        <span>
-                            <h2>Plan information</h2>
-                        </span>
-</div>
-                    <div class='field'>
-                        <input type="date", ṇame="date", id="label-name", class="inputbx", placeholder="Date">
-                        <input type="time", ṇame="time", id="label-name", class="inputbx", placeholder="Time">
-                    </div>
-                    <div>
-                        <span>
-                            <h2>Members</h2>
-                        </span>
+                        <label>
+                            <h2>Members <span style="color: red; font-weight: 100;">*</span></h2>
+                        </label>
                     </div>
                     <div class='field'>
-                        <input name="adults", id="label-name", placeholder="No. of adults", class="inputbx">
-                        <input name="Children", id="label-name", placeholder="No. of children", class="inputbx">
+                        <label for="adults" hidden></label>
+                        <input type="number" id="adults" name="adults" min='1' placeholder="No. of adults *" class="inputbx label-name" required>
+                        <input name="Children" id="" min='0' placeholder="No. of children " class="inputbx label-name">
                     </div>
+                    <p id="adults-error" class="error"></p>
+
                     <div class="btn-flex">
-                        <button class="btn" type="submit" onclick="tpPage()">Book Now</button>
+                        <button class="btn" type="submit" value="">Book Now</button>
                     </div>
                 </form>
                 
@@ -78,7 +103,6 @@
         </div>
         </div>
     </section>
-
 
     <script src="bookingForm.js"></script>
 </body>

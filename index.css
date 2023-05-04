@@ -208,7 +208,7 @@ button a{
 }
 .bt-shadow{
    
-   /*box-shadow: 2px 2px 5px black;*/
+   box-shadow: 2px 2px 5px black;
    width: 7vw;
 }
 
