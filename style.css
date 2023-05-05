@@ -161,7 +161,12 @@
         margin-left: 27vw;
      } 
     .imgbx{
-        margin-top:-36vh;
+        margin-top:-190px;
+        width: 100%;
+    }
+    img{
+        max-width: 300vh;
+        max-height: 400vh;
     }
     .form-img{
         transform: rotate(-90deg);
