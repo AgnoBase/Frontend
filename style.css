@@ -168,12 +168,23 @@
         width:100%;
      }
    /*Content-box*/
-    .contentbx{
+    /* .contentbx{
       margin-top:-30vh;
-    }
+    } */
      /*HEading-name*/
-     #boat-name{
+     #boat-name {
+        margin-top: -150px;
+        margin-left: 20px;
         font-size:2rem;
+     }
+
+     #details{
+        margin-left: 25px;
+     }
+
+     .booking-details{
+        margin-top: -50px;
+        margin-left: 20px;
      }
     .verify-email{
         flex-direction: column;
