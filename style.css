@@ -213,3 +213,14 @@
         flex-direction: column;
     } */
 }
+
+@media screen and (max-width: 300px){
+    .imgbx{
+        display: none;
+    }
+
+    .contentbx{
+        margin-top: 250px;
+        margin-left: 20px;
+    }
+}
